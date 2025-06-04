@@ -79,5 +79,7 @@ predictions = model.predict(test_news)
 
 for news, prediction in zip(test_news, predictions):
     print(f"Новость: {news}")
-    print(f"Прогноз изменения на фондовом рынке: {'рост' если prediction == 1 иначе 'падение'}")
+    print(
+        f"Прогноз изменения на фондовом рынке: {'рост' if prediction == 1 else 'падение'}"
+    )
     print()
