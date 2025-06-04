@@ -3,3 +3,4 @@ uvicorn
 scikit-learn
 pandas
 joblib
+python-telegram-bot==20.3
