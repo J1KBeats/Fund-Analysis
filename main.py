@@ -7,7 +7,9 @@ from typing import List
 
 
 # Путь к файлу модели
-model_path = os.path.join(os.path.dirname(__file__), 'model', 'market_prediction_model.pkl')
+# Модель сохраняется скриптом maintotrain.py в корневой директории,
+# поэтому здесь указываем путь относительно текущего файла
+model_path = os.path.join(os.path.dirname(__file__), 'market_prediction_model.pkl')
 
 # Загрузка модели
 model = joblib.load(model_path)
